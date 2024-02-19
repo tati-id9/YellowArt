@@ -22,8 +22,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 960px);
-  padding-right: calc(50% - 960px);
+  padding-left: calc(50% - 750px);
+  padding-right: calc(50% - 750px);
 }
 
 .title {
@@ -33,13 +33,19 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
+  padding-top: 55px;
+}
+
+.baner {
+  min-width: 38vw;
+  max-height: 60vw;
 }
 
 /*Header*/
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   min-height: 100px;
 }
@@ -75,14 +81,13 @@ body {
 .application {
   display: flex;
   align-items: center;
-  gap: 67px;
-  padding-bottom: 70px;
+  justify-content: space-between;
+  gap: 40px;
 }
 .application__left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 16%;
 }
 .application__title {
   color: #D9D9D9;
@@ -115,27 +120,18 @@ body {
   background-color: #121217;
   transition: all 0, 3s;
 }
-.application__baner {
-  min-width: 40vw;
-}
 
 /*About*/
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 70px;
 }
 .about__box {
   display: flex;
   flex-direction: row;
-  gap: 98px;
-}
-.about__baner {
-  min-width: 40vw;
-}
-.about__box-right {
-  padding-right: 13%;
+  justify-content: space-between;
+  gap: 40px;
 }
 .about__desc {
   color: #D9D9D9;
@@ -152,7 +148,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 70px;
 }
 .portfolio__box {
   display: flex;
@@ -165,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 .team__flex {
   display: flex;
@@ -206,23 +201,31 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 .services__flex {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.services__flex-box {
+  display: flex;
   align-items: center;
   gap: 50px;
+  padding-bottom: 40px;
 }
 .services__box {
   background-color: #17171D;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 44px;
 }
 .services__box-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 }
 .services__photo {
   padding-bottom: 44px;
@@ -238,6 +241,15 @@ body {
 }
 .services__info_price {
   color: #DFB600;
+}
+.services__details {
+  color: #DFB600;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 137.99%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 /*Footer*/

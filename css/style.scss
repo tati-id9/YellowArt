@@ -35,13 +35,19 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-bottom: 70px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+
+.baner {
+    min-width: 38vw;
+    max-height: 60vw;
 }
 
 /*Header*/
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     min-height: 100px;
 
@@ -81,14 +87,13 @@ body {
 .application {
     display: flex;
     align-items: center;
-    gap: 67px;
-    padding-bottom: 70px;
+    justify-content: space-between;
+    gap: 40px;
 
     &__left {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 16%;
     }
 
     &__title {
@@ -125,10 +130,6 @@ body {
             transition: all 0, 3s;
         }
     }
-
-    &__baner {
-        min-width: 40vw;
-    }
 }
 
 
@@ -137,20 +138,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 70px;
 
     &__box {
         display: flex;
         flex-direction: row;
-        gap: 98px;
-    }
-
-    &__baner {
-        min-width: 40vw;
-    }
-
-    &__box-right {
-        padding-right: 13%;
+        justify-content: space-between;
+        gap: 40px;
     }
 
     &__desc {
@@ -169,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 70px;
+    // padding-bottom: 60px;
 
     &__box {
         display: flex;
@@ -183,7 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 
     &__flex {
         display: flex;
@@ -231,18 +224,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 
     &__flex {
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__flex-box {
+        display: flex;
         align-items: center;
         gap: 50px;
+        padding-bottom: 40px;
     }
 
     &__box {
         background-color: $colorBox;
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 44px;
     }
 
@@ -250,6 +251,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 15px;
     }
 
     &__photo {
@@ -269,6 +271,17 @@ body {
             color: $colorAccentSite;
         }
     }
+
+    &__details {
+        color: $colorAccentSite;
+        font-family: $fontFamilySite;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 137.99%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
 
 }
 
