@@ -16,6 +16,7 @@
     &__desc {
         display: flex;
         flex-direction: column;
+        min-width: 350px;
     }
 
     &__box-info {
@@ -29,12 +30,12 @@
         padding-bottom: 35px;
     }
 
-    &__features{
-        max-width: 50vw;
-        padding-top: 39px;
+    &__features {
+        // max-width: 50vw;
+        // padding-top: 39px;
     }
 
-    &__info {
+    &__text {
         color: $colorText;
         font-family: $fontFamilySite;
         font-size: 1rem;
@@ -43,6 +44,17 @@
         line-height: normal;
         letter-spacing: 1.2px;
         padding-bottom: 15px;
+    }
+
+    &__info {
+        color: $colorText;
+        font-family: $fontFamilySite;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
 
         &_price {
             color: $colorAccentSite;
