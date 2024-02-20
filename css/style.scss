@@ -52,17 +52,6 @@ body {
     align-items: center;
     min-height: 100px;
 
-    &__application {
-        color: $colorAccentSite;
-        text-align: center;
-        font-family: $fontFamilySite;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 137.988%;
-        text-transform: uppercase;
-    }
-
     &__navbar {
         display: flex;
         gap: 170px;
@@ -81,6 +70,17 @@ body {
         &:hover {
             color: $colorAccentSite;
         }
+    }
+    
+    &__btn {
+        color: $colorAccentSite;
+        text-align: center;
+        font-family: $fontFamilySite;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 137.988%;
+        text-transform: uppercase;
     }
 }
 
