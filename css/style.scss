@@ -232,9 +232,10 @@ body {
     }
 
     &__flex-box {
-        display: flex;
-        align-items: center;
-        gap: 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 350px);
+        gap: 20px;
         padding-bottom: 40px;
     }
 
@@ -242,7 +243,6 @@ body {
         background-color: $colorBox;
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 35px;
     }
 
@@ -260,7 +260,7 @@ body {
     &__info {
         color: $colorText;
         font-family: $fontFamilySite;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
