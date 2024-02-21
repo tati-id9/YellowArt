@@ -12,6 +12,9 @@
   margin-bottom: 30px;
   min-width: 100%;
 }
+.catalog__box_position-reverse {
+  flex-direction: row-reverse;
+}
 .catalog__desc {
   display: flex;
   flex-direction: column;
