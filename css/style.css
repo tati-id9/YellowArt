@@ -204,7 +204,12 @@ body {
 .portfolio__box {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio__photo {
+  width: 30%;
 }
 
 /*Team*/
