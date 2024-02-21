@@ -1,1 +1,8 @@
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+
+    .portfolio {
+        &__box {
+            gap: 20px;
+        }
+    }
+}

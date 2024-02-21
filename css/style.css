@@ -346,4 +346,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+@media (max-width: 375px) {
+  .portfolio__box {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
