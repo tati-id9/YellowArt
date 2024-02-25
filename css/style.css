@@ -53,6 +53,37 @@
   color: #DFB600;
 }
 
+.call-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 55px;
+}
+.call-request__box {
+  background-color: #17171D;
+  min-width: 50%;
+  min-height: 50%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.questionnaire__info {
+  color: #DFB600;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 137.99%;
+}
+.questionnaire__input {
+  min-width: 500px;
+}
+
 html {
   font-size: 20px;
 }
@@ -284,7 +315,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
 }
 .services__photo {
   padding-bottom: 35px;
@@ -292,7 +322,7 @@ body {
 .services__info {
   color: #D9D9D9;
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

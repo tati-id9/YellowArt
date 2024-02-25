@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'services';
+@import 'call_reques';
 
 html {
     font-size: 20px;
@@ -256,7 +257,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 15px;
     }
 
     &__photo {
@@ -266,7 +266,7 @@ body {
     &__info {
         color: $colorText;
         font-family: $fontFamilySite;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

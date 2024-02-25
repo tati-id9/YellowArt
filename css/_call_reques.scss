@@ -1,0 +1,33 @@
+.call-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 55px;
+
+    &__box {
+        background-color: $colorBox;
+        min-width: 50%;
+        min-height: 50%;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.questionnaire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__info {
+        color: $colorAccentSite;
+        font-family: $fontFamilySite;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 137.99%;
+    }
+
+    &__input {
+        min-width: 500px
+    }
+}
