@@ -5,7 +5,7 @@ let divServ = document.querySelector(".catalog__conteiner");
 for (let i = 0; i < catalog.length; i++) {
     if (i % 2 == 0) {
         divServ.insertAdjacentHTML(
-            "beforeend",
+            'beforeend',
             `<div class="catalog__box">
             <article id ="desc${i}" class="catalog__desc"></article></div>`)
     }
@@ -14,7 +14,7 @@ for (let i = 0; i < catalog.length; i++) {
             "beforeend",
             `<div class="catalog__box catalog__box_position-reverse">
             <article id ="desc${i}" class="catalog__desc"></article></div>`)
-    }//вставка внутрь elem, в конец.
+    }//вставка внутрь элемента, в конец.
 
     const desc = document.getElementById(`desc${i}`);
 
@@ -24,11 +24,11 @@ for (let i = 0; i < catalog.length; i++) {
         <h3 class="catalog__info">Дизайн-проект <br> интерьера ${catalog[i].Name}</h3>
         <p class="catalog__info catalog__info_price">От ${catalog[i].price} ₽
         </p></div>`
-    ) //вставка во внуть элемента, в начало
+    ) //вставка во внутрь элемента, в начало
 
-    desc.insertAdjacentHTML('afterEnd', `<div id ="ul${i}" class="catalog__features"><ul class="catalog__ul"></ul></div>`) //после elem.
+    desc.insertAdjacentHTML('afterEnd', `<div class="catalog__features"><ul id ="ul${i}" class="catalog__ul"></ul></div>`) //после элемента
 
-    let ul = document.getElementById(`ul${i}`);
+    const ul = document.getElementById(`ul${i}`);
     for (let p of catalog[i].info) {
         let item = document.createElement('li');
         item.className = "catalog__text"
