@@ -68,7 +68,7 @@
   align-items: center;
 }
 .call-request__title {
-  padding: 0px 0px 52px 0px;
+  padding: 0px 0px 15px 0px;
   color: #D9D9D9;
   font-family: "Roboto";
   font-size: 2rem;
@@ -91,19 +91,20 @@
   line-height: 137.99%;
 }
 .questionnaire__input {
-  min-width: 500px;
-  height: 70px;
+  min-width: 350px;
+  height: 50px;
   border-radius: 10px;
+  padding-left: 15px;
 }
 .questionnaire__submit {
-  width: 320px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
   border-radius: 10px;
   background-color: #DFB600;
-  padding: 8px 0px;
+  padding: 8px;
   color: #121217;
   font-family: "Roboto";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 137.99%;
   text-transform: uppercase;
