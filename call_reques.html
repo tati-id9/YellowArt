@@ -36,18 +36,18 @@
             <h2 class="call-request__title">Оставить заявку</h2>
             <form class="questionnaire" action="" method="post">
                 <div class="questionnaire__box">
-                    <p class="questionnaire__info">Имя</p>
-                    <input class="questionnaire__input" type="text" name="name" placeholder="Ваше имя" required />
+                    <label for="name" class="questionnaire__info">Имя</label>
+                    <input id="name" class="questionnaire__input" type="text" name="name" placeholder="Укажите ваше имя" required />
                 </div>
                 <div class="questionnaire__box">
-                    <p class="questionnaire__info">Телефон</p>
-                    <input class="questionnaire__input" type="tel" name="phone" placeholder="Телефон для связи"
+                    <label for="phone" class="questionnaire__info">Телефон</label>
+                    <input id="phone" class="questionnaire__input" type="tel" name="phone" placeholder="Укажите телефон для связи"
                         required />
                 </div>
                 <div class="questionnaire__box">
-                    <p class="questionnaire__info">E-mail</p>
-                    <input class="questionnaire__input" type="email" name="email"
-                        placeholder="Ваш Email (для ответа)" />
+                    <label for="email" class="questionnaire__info">E-mail</label>
+                    <input id="email" class="questionnaire__input" type="email" name="email"
+                        placeholder="Укажите ваш E-mail (для ответа)" />
                 </div>
                 <input class="questionnaire__submit" type="submit" name="Submit" value="Отправить" />
             </form>
