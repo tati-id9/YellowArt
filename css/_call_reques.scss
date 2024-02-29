@@ -1,3 +1,23 @@
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+.header{
+    &__reques-btn{
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
 .call-request {
     display: flex;
     flex-direction: column;
@@ -48,6 +68,11 @@
         border-radius: 10px;
         padding-left: 15px;
         background-color: $colorText;
+        border: transparent;
+
+        &:focus{
+            outline: solid $colorAccentSite;
+        }
     }
 
     &__submit {
