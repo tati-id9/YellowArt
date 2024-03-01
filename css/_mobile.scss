@@ -1,7 +1,8 @@
-@media (max-width: 375px) {
+@media (min-width:320px) and (max-width: 425px) {
 
     .portfolio {
         &__box {
+            flex-direction: column;
             gap: 20px;
         }
     }

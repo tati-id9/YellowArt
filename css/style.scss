@@ -1,17 +1,7 @@
 @import 'vars';
 @import 'services';
 @import 'call_reques';
-
-@keyframes slide-in-right {
-    0% {
-      transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+@import 'animation';
 
 html {
     font-size: 20px;
@@ -84,7 +74,7 @@ body {
         }
     }
 
-    &__reques-btn{
+    &__call-reques-btn{
         width: 300px;
         display: flex;
         justify-content: flex-end;
@@ -355,3 +345,4 @@ body {
 }
 
 @import 'mobile';
+@import 'tablet';
