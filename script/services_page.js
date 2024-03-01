@@ -6,13 +6,13 @@ for (let i = 0; i < catalog.length; i++) {
     if (i % 2 == 0) {
         divServ.insertAdjacentHTML(
             'beforeend',
-            `<div class="catalog__box">
+            `<div id ="box${i}" class="catalog__box">
             <article id ="desc${i}" class="catalog__desc"></article></div>`)
     }
     else {
         divServ.insertAdjacentHTML(
             "beforeend",
-            `<div class="catalog__box catalog__box_position-reverse">
+            `<div  id ="box${i}" class="catalog__box catalog__box_position-reverse">
             <article id ="desc${i}" class="catalog__desc"></article></div>`)
     }//вставка внутрь элемента, в конец.
 

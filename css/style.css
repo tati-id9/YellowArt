@@ -9,7 +9,7 @@
   display: flex;
   gap: 50px;
   padding: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   min-width: 100%;
 }
 .catalog__box_position-reverse {
@@ -368,6 +368,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 35px;
+}
+.services__box:hover {
+  box-shadow: 0px 2px 20px 0px #DFB600;
 }
 .services__box-info {
   display: flex;
