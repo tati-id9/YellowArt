@@ -451,13 +451,31 @@ body {
   html {
     font-size: 5px;
   }
+  .application {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .application__right {
+    grid-row-start: 1;
+  }
+  .application__left {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .about__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__box-left {
+    display: none;
+  }
+  .about__box-right {
+    padding: 3%;
+  }
   .team__flex {
     display: flex;
     gap: 15px;
     flex-direction: column;
   }
   .portfolio__box {
-    flex-direction: column;
     gap: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

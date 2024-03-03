@@ -1,6 +1,35 @@
 @media (min-width:320px) and (max-width: 425px) {
+
     html {
         font-size: 5px;
+    }
+
+    .application {
+        grid-template-columns: repeat(1, 1fr);
+
+        &__right {
+            grid-row-start: 1;
+        }
+
+        &__left {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .about {
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__box-left {
+            display: none;
+
+        }
+
+        &__box-right {
+            padding: 3%;
+        }
     }
 
     .team__flex {
@@ -11,7 +40,8 @@
 
     .portfolio {
         &__box {
-            flex-direction: column;
+            // flex-direction: column;
+            // align-items: center;
             gap: 20px;
         }
     }
