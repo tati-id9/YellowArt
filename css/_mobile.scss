@@ -1,4 +1,13 @@
 @media (min-width:320px) and (max-width: 425px) {
+    html {
+        font-size: 5px;
+    }
+
+    .team__flex {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
 
     .portfolio {
         &__box {

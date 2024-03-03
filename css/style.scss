@@ -24,6 +24,10 @@ img {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $colorSelectSite;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .center {
@@ -43,8 +47,8 @@ body {
 }
 
 .baner {
-    min-width: 38vw;
-    max-height: 60vw;
+    min-width: 100%;
+    ;
 }
 
 /*Header*/
@@ -95,9 +99,12 @@ body {
 
 /*Application*/
 .application {
-    display: flex;
+    // display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 
     &__left {
@@ -150,9 +157,9 @@ body {
     align-items: center;
 
     &__box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 
@@ -250,7 +257,7 @@ body {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 350px);
-        gap: 20px;
+        gap: 50px;
         padding-bottom: 40px;
     }
 
@@ -312,6 +319,8 @@ body {
 
     min-height: 230px;
     padding-top: 29px;
+
+    flex-shrink: 0;
 
     &__text {
         color: $colorText;
