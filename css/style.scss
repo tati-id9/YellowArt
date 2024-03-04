@@ -189,7 +189,7 @@ body {
     }
 
     &__photo {
-        width: 30%;
+        max-width: 30%;
     }
 }
 
@@ -201,6 +201,9 @@ body {
 
     &__flex {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 60px;
         padding-bottom: 23px;
     }

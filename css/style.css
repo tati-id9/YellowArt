@@ -306,7 +306,7 @@ body {
   justify-content: center;
 }
 .portfolio__photo {
-  width: 30%;
+  max-width: 30%;
 }
 
 /*Team*/
@@ -317,6 +317,9 @@ body {
 }
 .team__flex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 60px;
   padding-bottom: 23px;
 }
@@ -447,9 +450,17 @@ body {
   gap: 30px;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (max-width: 768px) {
   html {
-    font-size: 5px;
+    font-size: 14px;
+  }
+  .center {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .title {
+    padding-top: 30px;
+    padding-bottom: 25px;
   }
   .application {
     grid-template-columns: repeat(1, 1fr);
@@ -457,9 +468,8 @@ body {
   .application__right {
     grid-row-start: 1;
   }
-  .application__left {
-    flex-direction: row;
-    justify-content: space-around;
+  .application__btn {
+    padding: 12px 50px;
   }
   .about__box {
     grid-template-columns: repeat(1, 1fr);
@@ -470,12 +480,61 @@ body {
   .about__box-right {
     padding: 3%;
   }
+  .team__box {
+    gap: 10px;
+    max-width: 40%;
+  }
   .team__flex {
     display: flex;
-    gap: 15px;
-    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
   }
   .portfolio__box {
-    gap: 20px;
+    gap: 10px;
+  }
+  .portfolio__photo {
+    max-width: 45%;
+  }
+  .services__flex-box {
+    grid-template-columns: repeat(2, 350px);
+    gap: 10px;
+  }
+  .catalog__box {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  .catalog__desc {
+    min-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog__photo {
+    padding-bottom: 0px;
+    max-width: 40%;
+  }
+  .catalog__box-info {
+    gap: 30px;
+  }
+  .catalog__text {
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 10px;
+  }
+  .services__flex-box {
+    grid-template-columns: repeat(1, 250px);
+  }
+  .services__photo {
+    padding-bottom: 10px;
+  }
+  .services__box-info {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
