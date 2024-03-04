@@ -13,4 +13,4 @@
 
 Команда проекта:
 * Графический дизайнер - *[Анастасия Уткина](https://www.behance.net/tropichka)* 
-* Frontend-разработчик – *[Татьяна Демакова]([https://github.com/tati-id9])*
+* Frontend-разработчик – *[Татьяна Демакова](https://github.com/tati-id9)*
