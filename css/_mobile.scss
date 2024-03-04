@@ -1,127 +1,45 @@
-@media (max-width: 768px) {
+@media (max-width: 425px) {
 
     html {
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    .center {
-        padding-left:2%;
-        padding-right: 2%;
-    }
-
-    .title{
-        padding-top: 30px;
-        padding-bottom: 25px
-    }
-
-    // Main Page
-    .application {
-        grid-template-columns: repeat(1, 1fr);
-
-        &__right {
-            grid-row-start: 1;
-        }
-
-        &__btn{
-            padding: 12px 50px;
-        }
-    }
-
-    .about {
-        &__box {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        &__box-left {
-            display: none;
-        }
-
-        &__box-right {
-            padding: 3%;
-        }
-    }
-
-    .team{
-
-        &__box{
-            gap: 10px;
-            max-width: 40%;
-        }
-
-        &__flex {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-direction: row;
-        }
-    }
-    .portfolio {
-        &__box {
-            gap: 10px;
-        }
-
-        &__photo{
-            max-width: 45%;
-        }
-    }
-    
     .services {
         &__flex-box {
-            grid-template-columns: repeat(2, 350px);
-            gap: 10px;
+            grid-template-columns: repeat(1, 350px);
         }
 
-    }
-
-    .footer{
-
-    }
-
-    // Services Page
-
-    .catalog{
-        &__box{
-            flex-direction: column;
-            gap: 15px;
-            padding: 15px;
+        &__photo {
+            padding-bottom: 10px
         }
-        &__desc{
-            min-width: 100%;
+
+        &__box-info {
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        &__socials {
             flex-direction: row;
-            justify-content: space-between;
-        }
-        &__photo{
-            padding-bottom: 0px;
-            max-width: 40%;
-        }
-        &__box-info{
-            gap: 30px;
-        }
-        &__text{
-            padding-bottom: 5px;
+            align-items: center;
         }
     }
 
     // coll reques Page
-}
+    .questionnaire {
+        &__input {
+            height: 30px;
+            width: 200px;
+        }
 
-@media (max-width: 425px) {
-    
-    html {
-        font-size: 10px;
+        &__submit {
+            width: 150px;
+            height: 30px;
+        }
     }
-    .services {
-    &__flex-box {
-        grid-template-columns: repeat(1, 250px);
-    }
-    &__photo{
-        padding-bottom: 10px
-    }
-    &__box-info{
-        align-items: center;
-        flex-direction: column;
-        gap: 5px;
-    }
-}
 }

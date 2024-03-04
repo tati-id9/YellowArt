@@ -47,10 +47,11 @@
     }
 
     &__input {
-        min-width: 350px;
+        width: 350px;
         height: 50px;
         border-radius: 10px;
         padding-left: 15px;
+        font-size: 0.8rem;
         background-color: $colorText;
         border: transparent;
         outline: transparent;
@@ -66,7 +67,6 @@
         height: 50px;
         border-radius: 10px;
         background-color: $colorAccentSite;
-        padding: 8px;
 
         color: $colorSelectSite;
         font-family: $fontFamilySite;

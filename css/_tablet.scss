@@ -1,0 +1,151 @@
+@media (max-width: 1520px) {
+    .center {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    // Main Page
+    .header {
+        &__navbar {
+            gap: 100px;
+        }
+    }
+
+    .services {
+        &__flex-box {
+            grid-template-columns: repeat(2, 350px);
+        }
+
+    }
+
+    .portfolio {
+        &__box {
+            gap: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .center {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .title {
+        padding-top: 30px;
+        padding-bottom: 25px
+    }
+
+    // Main Page
+    .application {
+        grid-template-columns: repeat(1, 1fr);
+
+        &__right {
+            grid-row-start: 1;
+        }
+
+        &__btn {
+            padding: 12px 50px;
+        }
+    }
+
+    .about {
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__box-left {
+            display: none;
+        }
+
+        &__box-right {
+            padding: 3%;
+        }
+    }
+
+    .team {
+
+        &__box {
+            gap: 10px;
+            max-width: 40%;
+        }
+
+        &__flex {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+
+    .portfolio {
+        &__box {
+            gap: 10px;
+        }
+
+        &__photo {
+            max-width: 45%;
+        }
+    }
+
+    .services {
+        &__flex-box {
+            grid-template-columns: repeat(2, 350px);
+            gap: 10px;
+        }
+
+    }
+
+    .footer {
+        justify-content: space-between;
+        align-items: center;
+
+        &__contact-tel {
+            padding-bottom: 0px;
+        }
+
+        &__socials-nav {
+            gap: 10px;
+        }
+    }
+
+    // Services Page
+
+    .catalog {
+        &__box {
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        &__desc {
+            min-width: 100%;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__photo {
+            padding-bottom: 0px;
+            max-width: 40%;
+        }
+
+        &__box-info {
+            gap: 15px;
+        }
+
+        &__text {
+            padding-bottom: 5px;
+        }
+    }
+}

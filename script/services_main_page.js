@@ -2,7 +2,7 @@ import { services } from './list_services.js';
 
 let divServ = document.querySelector(".services__flex-box");
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
     divServ.insertAdjacentHTML(
         "beforeend",
         `<article class="services__box">
