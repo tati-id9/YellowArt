@@ -102,54 +102,6 @@ body {
     }
 }
 
-// .burger {
-//     display: flex;
-//     position: relative;
-//     z-index: 50;
-//     align-items: center;
-//     justify-content: center;
-//     width: 30px;
-//     height: 18px;
-
-//     &__span {
-//         height: 2px;
-//         width: 80%;
-//         transform: scale(1);
-//         background-color: $colorText;
-
-//         :active {
-//             transform: scale(0);
-//         }
-//     }
-
-//     ::after,
-//     ::before {
-//         content: '';
-//         height: 2px;
-//         width: 100%;
-//         border: $colorText;
-//         transform: all 0.3 ease 0s;
-//     }
-
-//     ::after {
-//         bottom: 0;
-//     }
-
-//     ::before {
-//         top: 0;
-//     }
-
-//     :active::before {
-//         top: 50%;
-//         transform: rotate(-45deg)translate(0, -50%);
-//     }
-
-//     :active::after {
-//         bottom: 50%;
-//         transform: rotate(45deg)translate(0, 50%);
-//     }
-// }
-
 /*Application*/
 .application {
     // display: flex;
@@ -414,4 +366,3 @@ body {
 }
 
 @import 'mobile';
-@import 'tablet';

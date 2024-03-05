@@ -453,38 +453,6 @@ body {
   gap: 30px;
 }
 
-@media (max-width: 425px) {
-  html {
-    font-size: 12px;
-  }
-  .services__flex-box {
-    grid-template-columns: repeat(1, 350px);
-  }
-  .services__photo {
-    padding-bottom: 10px;
-  }
-  .services__box-info {
-    align-items: center;
-    gap: 20px;
-  }
-  .footer {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-  .footer__socials {
-    flex-direction: row;
-    align-items: center;
-  }
-  .questionnaire__input {
-    height: 30px;
-    width: 200px;
-  }
-  .questionnaire__submit {
-    width: 150px;
-    height: 30px;
-  }
-}
 @media (max-width: 1520px) {
   .center {
     padding-left: 5%;
@@ -583,5 +551,50 @@ body {
   }
   .catalog__text {
     padding-bottom: 5px;
+  }
+}
+@media (max-width: 719px) {
+  .services__flex-box {
+    grid-template-columns: repeat(1, 350px);
+  }
+  .services__photo {
+    padding-bottom: 10px;
+  }
+  .services__box-info {
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .footer__socials {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__tel {
+    display: none;
+  }
+  .footer__contact-schedule {
+    padding-left: 0px;
+  }
+  .questionnaire__input {
+    height: 30px;
+    width: 200px;
+  }
+  .questionnaire__submit {
+    width: 150px;
+    height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .services__flex-box {
+    grid-template-columns: repeat(1, 300px);
   }
 }/*# sourceMappingURL=style.css.map */
