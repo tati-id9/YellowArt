@@ -1,4 +1,13 @@
-document.querySelector('.hamburger-button').addEventListener('click', function() {
-    document.querySelector('.nav-links').style.display = 
-    (document.querySelector('.nav-links').style.display == 'none') ? 'flex' : 'none';
- });
+let button = document.querySelector('.hamburger__button');
+
+let press = document.querySelector('.hamburger__nav').style.display = 'none';
+press = true;
+
+button.onclick = () => {
+    if(press == true){
+        document.querySelector('.hamburger__nav').style.display = 'block';
+    } else {
+        document.querySelector('.hamburger__nav').style.display = 'none';
+    }
+    press = !press;
+}

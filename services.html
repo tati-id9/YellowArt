@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="script/list_services.js"></script>
     <script type="module" src="script/services_page.js"></script>
+    <script src="script/burger.js" defer></script>
 </head>
 
 <body>
@@ -24,6 +25,21 @@
                 </svg>
             </a>
         </div>
+        <div class="hamburger">
+            <batton class="hamburger__button"> 
+                <svg class="ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path class="top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                    <path class="middle" d="m 70,50 h -40" />
+                    <path class="bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                </svg></batton>
+            <div class="hamburger__nav">
+                <nav class="hamburger__links">
+                <a href="index.html#about" class="header__link">О нас</a>
+                <a href="index.html#portfolio" class="header__link">Портфолио</a>
+                <a href="index.html#services" class="header__link">Услуги</a>
+            </nav>
+            </div>
+        </div >
         <nav class="header__navbar">
             <a href="index.html#about" class="header__link">О нас</a>
             <a href="index.html#portfolio" class="header__link">Портфолио</a>
