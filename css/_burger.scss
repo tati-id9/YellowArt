@@ -7,19 +7,35 @@
 
     &__button{
         display: flex;
-        align-items: center;}
+        align-items: center;
+    }
          
-        &__nav {
-            min-width: 100px;
-        }
+    &__nav {
+        min-width: 100px;
+    }
         
-        &__links{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-right: 40px;
-            gap: 50px;
+    &__links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 40px;
+        gap: 50px;
+    }
+
+    &__link{
+        color: $colorText;
+        text-align: center;
+        font-family: $fontFamilySite;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 137.988%;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $colorAccentSite;
         }
+    }
 }
 
  
@@ -30,6 +46,24 @@
         flex-direction: row-reverse;
         align-items: center;
     }
+
+}
+
+@media (max-width: 719px) {
+    .hamburger {
+        &__links{
+            padding-right: 0px;
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .hamburger {
+    &__link{
+        font-size: 0.8rem;
+    }
+}
 
 }
 

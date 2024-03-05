@@ -159,6 +159,19 @@
   padding-right: 40px;
   gap: 50px;
 }
+.hamburger__link {
+  color: #D9D9D9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.988%;
+  text-transform: uppercase;
+}
+.hamburger__link:hover {
+  color: #DFB600;
+}
 
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
@@ -166,6 +179,17 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+}
+@media (max-width: 719px) {
+  .hamburger__links {
+    padding-right: 0px;
+    gap: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .hamburger__link {
+    font-size: 0.8rem;
   }
 }
 .ham2 {
@@ -640,6 +664,9 @@ body {
     align-items: center;
     gap: 20px;
   }
+  .services__info {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 425px) {
   html {
@@ -672,5 +699,8 @@ body {
 @media (max-width: 320px) {
   .services__flex-box {
     grid-template-columns: repeat(1, 300px);
+  }
+  .services__info {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
