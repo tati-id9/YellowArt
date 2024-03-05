@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .catalog {
   display: flex;
   flex-direction: column;
@@ -138,6 +139,76 @@
     opacity: 1;
   }
 }
+.hamburger {
+  display: none;
+}
+.hamburger__button {
+  display: block;
+}
+.hamburger::-webkit-details-marker {
+  display: none;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger__button {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger__nav {
+    width: 100px;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+  }
+  .hamburger__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+    gap: 10px;
+  }
+}
+.ham4 {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.ham4 path {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #DFB600;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham4.active {
+  transform: rotate(-45deg);
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
 html {
   font-size: 20px;
 }
@@ -489,6 +560,12 @@ body {
   .title {
     padding-top: 30px;
     padding-bottom: 25px;
+  }
+  .header__navbar {
+    display: none;
+  }
+  .header__call-reques-btn {
+    display: none;
   }
   .application {
     grid-template-columns: repeat(1, 1fr);

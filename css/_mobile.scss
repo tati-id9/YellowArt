@@ -47,6 +47,14 @@
     }
 
     // Main Page
+    .header{
+        &__navbar{
+            display: none;
+        }
+        &__call-reques-btn{
+            display: none;
+        }
+    }
     .application {
         grid-template-columns: repeat(1, 1fr);
 
