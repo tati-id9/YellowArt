@@ -173,6 +173,35 @@
   color: #DFB600;
 }
 
+.ham2 {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.ham2 path {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #DFB600;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham2 > .top {
+  stroke-dasharray: 40 121;
+}
+.ham2 > .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham2.active > .top {
+  stroke-dashoffset: -102px;
+}
+.ham2.active > .bottom {
+  stroke-dashoffset: -102px;
+}
+
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
   .hamburger {
@@ -192,39 +221,6 @@
     font-size: 0.8rem;
   }
 }
-.ham2 {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-
-.ham2 path {
-  fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #DFB600;
-  stroke-width: 5.5;
-  stroke-linecap: round;
-}
-
-.ham2 .top {
-  stroke-dasharray: 40 121;
-}
-
-.ham2 .bottom {
-  stroke-dasharray: 40 121;
-}
-
-.ham2.active .top {
-  stroke-dashoffset: -102px;
-}
-
-.ham2.active .bottom {
-  stroke-dashoffset: -102px;
-}
-
 html {
   font-size: 20px;
 }
@@ -577,6 +573,9 @@ body {
     padding-top: 30px;
     padding-bottom: 25px;
   }
+  .logo {
+    height: 50px;
+  }
   .header__navbar {
     display: none;
   }
@@ -630,7 +629,7 @@ body {
     padding-bottom: 0px;
   }
   .footer__socials-nav {
-    gap: 10px;
+    gap: 15px;
   }
   .catalog__box {
     flex-direction: column;
@@ -686,6 +685,15 @@ body {
   }
   .footer__contact-schedule {
     padding-left: 0px;
+  }
+  .social {
+    height: 41px;
+  }
+  .catalog__box-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
   }
   .questionnaire__input {
     height: 30px;
