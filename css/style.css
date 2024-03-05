@@ -154,10 +154,10 @@
 }
 .hamburger__links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
   padding-right: 40px;
-  gap: 10px;
+  gap: 50px;
 }
 
 /* Медиазапрос для мобильных устройств */
@@ -165,9 +165,10 @@
   .hamburger {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
-.ham4 {
+.ham2 {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
@@ -176,7 +177,7 @@
           user-select: none;
 }
 
-.ham4 path {
+.ham2 path {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #DFB600;
@@ -184,24 +185,20 @@
   stroke-linecap: round;
 }
 
-.ham4.active {
-  transform: rotate(-45deg);
-}
-
-.ham4 .top {
+.ham2 .top {
   stroke-dasharray: 40 121;
 }
 
-.ham4 .bottom {
+.ham2 .bottom {
   stroke-dasharray: 40 121;
 }
 
-.ham4.active .top {
-  stroke-dashoffset: -68px;
+.ham2.active .top {
+  stroke-dashoffset: -102px;
 }
 
-.ham4.active .bottom {
-  stroke-dashoffset: -68px;
+.ham2.active .bottom {
+  stroke-dashoffset: -102px;
 }
 
 html {
