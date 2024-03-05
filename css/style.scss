@@ -2,6 +2,7 @@
 @import 'services';
 @import 'call_reques';
 @import 'animation';
+@import 'burger';
 
 html {
     font-size: 20px;
@@ -313,6 +314,15 @@ body {
         line-height: 137.99%;
         text-align: left;
         text-transform: uppercase;
+
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 10px;
+
+        &:hover {
+            border: 2px solid $colorAccentSite;
+            transition: all 0, 3s;
+        }
     }
 
 

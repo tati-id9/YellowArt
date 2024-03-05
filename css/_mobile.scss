@@ -208,6 +208,7 @@
 }
 
 @media (max-width: 320px) {
+    // Main Page
     .services {
         &__flex-box {
             grid-template-columns: repeat(1, 300px);
