@@ -696,12 +696,12 @@ body {
     gap: 10px;
   }
   .questionnaire__input {
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 250px;
   }
   .questionnaire__submit {
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
   }
 }
 @media (max-width: 320px) {
