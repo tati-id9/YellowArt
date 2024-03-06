@@ -16,7 +16,7 @@
     }
 
     .services {
-        &__flex-box {
+        &__grid-box {
             grid-template-columns: repeat(2, 350px);
         }
 
@@ -115,7 +115,7 @@
     }
 
     .services {
-        &__flex-box {
+        &__grid-box {
             grid-template-columns: repeat(2, 350px);
             gap: 10px;
         }
@@ -167,7 +167,7 @@
 
 @media (max-width: 719px) {
     .services {
-        &__flex-box {
+        &__grid-box {
             grid-template-columns: repeat(1, 350px);
         }
 
@@ -247,7 +247,7 @@
 
     // Main Page
     .services {
-        &__flex-box {
+        &__grid-box {
             grid-template-columns: repeat(1, 300px);
         }
 

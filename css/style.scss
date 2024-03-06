@@ -47,7 +47,7 @@ body {
     padding-top: 55px;
 }
 
-.baner {
+.banner {
     min-width: 100%;
 }
 
@@ -104,10 +104,8 @@ body {
 
 /*Application*/
 .application {
-    // display: flex;
-    align-items: center;
-    // justify-content: space-between;
     display: grid;
+    align-items: center;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
@@ -131,6 +129,7 @@ body {
     }
 
     &__btn {
+        // Стилизация текста
         background-color: $colorAccentSite;
         border-radius: 10px;
         color: $colorSelectSite;
@@ -141,7 +140,7 @@ body {
         font-weight: 700;
         line-height: 137.988%;
         text-transform: uppercase;
-
+        // Стилизация контейнера
         padding: 22px 65px;
         border: 2px solid transparent;
 
@@ -260,7 +259,7 @@ body {
         align-items: flex-end;
     }
 
-    &__flex-box {
+    &__grid-box {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(4, 350px);
