@@ -606,11 +606,7 @@ body {
     max-width: 40%;
   }
   .team__flex {
-    display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
   }
   .portfolio__box {
     gap: 10px;
@@ -619,7 +615,6 @@ body {
     max-width: 45%;
   }
   .services__grid-box {
-    grid-template-columns: repeat(2, 350px);
     gap: 10px;
   }
   .footer {
