@@ -1,6 +1,6 @@
 import { services } from './list_services.js';
 
-let divServ = document.querySelector(".services__grid-box");
+const divServ = document.querySelector(".services__grid-box");
 
 for (let i = 0; i < 4; i++) {
     divServ.insertAdjacentHTML(
