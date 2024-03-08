@@ -1,6 +1,6 @@
 import { services as catalog } from './list_services.js';
 
-let divServ = document.querySelector(".catalog__conteiner");
+const divServ = document.querySelector(".catalog__conteiner");
 
 for (let i = 0; i < catalog.length; i++) {
     if (i % 2 == 0) {

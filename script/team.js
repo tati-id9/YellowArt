@@ -1,4 +1,4 @@
-let employees = [
+const employees = [
     {
         Name: "Марк",
         photo: "img/team/team_mark.png",
@@ -21,7 +21,7 @@ let employees = [
     },
 ];
 
-let divContacts = document.querySelector(".team__flex");
+const divContacts = document.querySelector(".team__flex");
 
 for (let employee of employees) {
     divContacts.insertAdjacentHTML(
