@@ -544,6 +544,10 @@ body {
   gap: 30px;
 }
 
+.social:hover path {
+  stroke: #121217;
+}
+
 @media (max-width: 1520px) {
   .center {
     padding-left: 5%;

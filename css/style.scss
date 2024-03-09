@@ -373,4 +373,10 @@ body {
     }
 }
 
+.social {
+    &:hover path {
+        stroke: $colorSelectSite;
+    }
+}
+
 @import 'mobile';
