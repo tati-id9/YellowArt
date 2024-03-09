@@ -545,7 +545,8 @@ body {
 }
 
 .social:hover path {
-  stroke: #121217;
+  stroke: #DFB600;
+  fill: #121217;
 }
 
 @media (max-width: 1520px) {

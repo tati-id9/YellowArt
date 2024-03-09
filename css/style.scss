@@ -375,7 +375,8 @@ body {
 
 .social {
     &:hover path {
-        stroke: $colorSelectSite;
+        stroke: $colorAccentSite;
+        fill: $colorSelectSite;
     }
 }
 
